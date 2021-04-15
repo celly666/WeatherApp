@@ -34,7 +34,7 @@ namespace WeatherApp
                 WeatherInfo.root outPut = result;
 
                 label1.Text = string.Format("{0}", outPut.name);
-
+                picturebox1.ImageUrl = string.Format("http://openweathermap.org/img/w/{0}.png", weatherInfo.list[0].weather[0].icon);
                 label2.Text = string.Format("{0}", outPut.sys.country);
                 label3.Text = string.Format("{0} \u00B0" + "C", outPut.main.temp);
             }
